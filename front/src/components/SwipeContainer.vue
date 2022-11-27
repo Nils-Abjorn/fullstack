@@ -1,7 +1,7 @@
 <template>
   <div class="card">
     <CardSwipe :type="data"></CardSwipe>
-    <ElButton></ElButton>
+    <ElButton @click="execute()"></ElButton>
     <div>Loading: {{ isLoading.toString() }}</div>
     <div>Finished: {{ isFinished.toString() }}</div>
   </div>
@@ -12,7 +12,7 @@ import CardSwipe from "./CardSwipe.vue";
 
 import { useAxios } from "@vueuse/integrations/useAxios";
 
-const { data, isLoading, isFinished } = useAxios("http://localhost:3000");
+const { data, isLoading, isFinished, execute } = useAxios("api/example");
 </script>
 
 <style scoped>
