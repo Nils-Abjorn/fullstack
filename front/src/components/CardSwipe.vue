@@ -18,5 +18,6 @@ defineProps<{
   width: 100%;
   height: 600px;
   max-width: 400px;
+  border-radius: 32px;
 }
 </style>
