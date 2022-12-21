@@ -6,7 +6,7 @@ import App from "./App.vue";
 import axios from "axios";
 
 export const HTTP = axios.create({
-  baseURL: `baseURL: "http://localhost:3000"`,
+  baseURL: `baseURL: "http://backend:3000"`,
 });
 
 createApp(App).use(ElementPlus).mount("#app");
